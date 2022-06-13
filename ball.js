@@ -34,6 +34,9 @@ function moveBall() {
   }
   rgbColor = rgbArray[positionX / velocity];
   ball.style.backgroundColor = rgbColor;
+  ball.style.width = (positionY / 2) + "px";
+  ball.style.height = (positionY / 2) + "px";
+  
  if (
     positionX > Xmax ||
     positionX === Xmin ||
